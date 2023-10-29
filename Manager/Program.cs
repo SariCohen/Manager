@@ -20,8 +20,10 @@ class Program
         //Console.WriteLine(rowsCategory + " Added to DB");
 
         //da.DisplayCategory(connectionString);
-        //idhkfhhrdsklho
-        var x = 5;
+        
+
+        //test
+        
     }
 }
 
