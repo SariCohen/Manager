@@ -8,22 +8,23 @@ class Program
 {
     static void Main()
     {
-        string connectionString = "Data Source=srv2\\pupils;Initial Catalog=manager;Integrated Security=True";
+        //school
+        //string connectionString = "Data Source=srv2\\pupils;Initial Catalog=manager;Integrated Security=True";
+        
+        //home
+        string connectionString = "Data Source=DESKTOP-TB3DT9H;Initial Catalog=Products;Integrated Security=True";
+        
         DataAccess da = new DataAccess();
 
-        //int rowsProd = da.insertProduct(connectionString);
-        //Console.WriteLine(rowsProd + " Added to DB");
+        int rowsProd = da.insertProduct(connectionString);
+        Console.WriteLine(rowsProd + " Added to DB");
 
-        da.DisplayProd(connectionString);
+        //da.DisplayProd(connectionString);
 
         //int rowsCategory = da.insertCategory(connectionString);
         //Console.WriteLine(rowsCategory + " Added to DB");
 
-        //da.DisplayCategory(connectionString);
-        
-
-        //test
-        
+        da.DisplayCategory(connectionString);        
     }
 }
 
