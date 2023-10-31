@@ -76,10 +76,10 @@ class DataAccess
             SqlDataReader reader = cmd.ExecuteReader();
             if (reader.HasRows)
             {
-                Console.WriteLine("prodId\tprodName\t\tprice\timage\t\tprodDescription");
+                Console.WriteLine("prodId\tprodName\t\tprice\timage\t\t\tcategoryId\tprodDescription");
                 while (reader.Read())
                 {
-                    Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", reader.GetInt32(0), reader.GetString(1), reader.GetInt32(2), reader.GetString(3), reader.GetString(4));
+                    Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t\t{5}", reader.GetInt32(0), reader.GetString(1), reader.GetInt32(2), reader.GetString(3), reader.GetInt32(4), reader.GetString(5));
                 }
             }
             else

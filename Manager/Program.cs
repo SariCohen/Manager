@@ -16,15 +16,15 @@ class Program
         
         DataAccess da = new DataAccess();
 
-        int rowsProd = da.insertProduct(connectionString);
-        Console.WriteLine(rowsProd + " Added to DB");
+        //int rowsProd = da.insertProduct(connectionString);
+        //Console.WriteLine(rowsProd + " Added to DB");
 
-        //da.DisplayProd(connectionString);
+        da.DisplayProd(connectionString);
 
         //int rowsCategory = da.insertCategory(connectionString);
         //Console.WriteLine(rowsCategory + " Added to DB");
 
-        da.DisplayCategory(connectionString);        
+        //da.DisplayCategory(connectionString);        
     }
 }
 
