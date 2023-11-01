@@ -9,11 +9,11 @@ class Program
     static void Main()
     {
         //school
-        //string connectionString = "Data Source=srv2\\pupils;Initial Catalog=manager;Integrated Security=True";
-        
+        string connectionString = "Data Source=SRV2\\PUPILS;Initial Catalog=214493777_Products;Integrated Security=True";
+
         //home
-        string connectionString = "Data Source=DESKTOP-TB3DT9H;Initial Catalog=Products;Integrated Security=True";
-        
+        //string connectionString = "Data Source=DESKTOP-TB3DT9H;Initial Catalog=Products;Integrated Security=True";
+
         DataAccess da = new DataAccess();
 
         //int rowsProd = da.insertProduct(connectionString);
